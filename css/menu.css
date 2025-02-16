@@ -1,0 +1,142 @@
+.menu-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0 10%;
+  background-color: #fff;
+  z-index: 999999;
+  box-shadow: #00000020 0 0 10px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1920px;
+}
+.nav-con {
+  display: flex;
+  align-items: center;
+}
+
+.contact-con {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.contact-btn {
+  display: flex;
+  gap: 15px;
+}
+.contact-btn a img {
+  cursor: pointer;
+  transition: var(--tran-05);
+}
+.contact-btn a img:hover {
+  transition: var(--tran-03);
+  scale: 0.9;
+}
+
+nav {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--black);
+}
+
+nav ul {
+  list-style-type: none;
+  cursor: pointer;
+}
+nav ul li a {
+  cursor: pointer;
+}
+
+nav > ul > li {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+nav ul ul {
+  position: absolute;
+  left: 0;
+  top: 58px;
+  background-color: #fff;
+  box-shadow: #00000020 0 0 15px;
+  min-width: 180px;
+  z-index: 9;
+  overflow: hidden;
+  border-radius: 2px;
+  max-height: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+nav > ul > li:hover > ul {
+  max-height: 500px;
+}
+
+nav ul ul li {
+  display: block;
+  padding: 15px 0;
+  margin: 0 20px;
+  background-color: #fff;
+  border-style: solid;
+
+  border-width: 0px;
+  border-bottom-width: 1px;
+  cursor: pointer;
+  border-color: #00000020;
+  transition: var(--tran-03);
+}
+nav ul ul li:hover {
+  color: var(--orange);
+  transition: var(--tran-03);
+}
+
+.-list {
+  position: relative;
+}
+.vert-list {
+  padding: 0;
+  color: #8b8b8b;
+}
+
+.-list::after {
+  content: url(/assets/svg/link/down.svg);
+  transition: var(--tran-03);
+  display: inline-block;
+}
+
+.-list:hover:after {
+  transform: rotate(-90deg);
+  transition: var(--tran-03);
+}
+
+._list {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+}
+
+._list::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main);
+  transform: scaleX(0);
+  transition: var(--tran-05);
+  z-index: 999;
+}
+
+._list:hover::after {
+  transform: scaleX(1);
+}

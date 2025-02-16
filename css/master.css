@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+@import url("menu.css");
+@import url("main.css");
+@import url("footer.css");
+@import url("modal.css");
+@import url("media.css");
+
+:root {
+  --title: 65px;
+  --btn: 16px;
+  --h1: 40px;
+  --h2: 20px;
+  --h3: 16px;
+  --h3-card: 14px;
+  --black: #2e2e2e;
+  --main: #ff9350;
+  --gray: #595959;
+  --tran-05: all 0.5s ease;
+  --tran-03: all 0.3s ease;
+}
+.element::-webkit-scrollbar {
+  width: 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  cursor: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.catalog-title_l1 {
+  display: none;
+}
+.text-cat-mob {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+body {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.btn {
+  border-style: none;
+  width: fit-content;
+  padding: 4px 35px;
+  margin: 0 15px;
+  font-size: var(--btn);
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  color: #fff;
+  background: var(--main);
+  transition: var(--tran-05);
+}
+.btn:hover {
+  background: #ff7e2e;
+  transition: var(--tran-05);
+}
+.btn:active {
+  scale: 0.9;
+  transition: var(--tran-05);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1920px;
+  height: fit-content;
+}
+h1 {
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+h2 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: var(--h2);
+  color: #454545;
+}
+h3 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: var(--h3-card);
+}
+span {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 13px;
+}
