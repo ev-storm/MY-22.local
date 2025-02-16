@@ -32,14 +32,6 @@
   display: flex;
   gap: 15px;
 }
-.contact-btn a img {
-  cursor: pointer;
-  transition: var(--tran-05);
-}
-.contact-btn a img:hover {
-  transition: var(--tran-03);
-  scale: 0.9;
-}
 
 nav {
   font-family: "Montserrat";
@@ -95,7 +87,7 @@ nav ul ul li {
   transition: var(--tran-03);
 }
 nav ul ul li:hover {
-  color: var(--orange);
+  color: var(--main);
   transition: var(--tran-03);
 }
 
@@ -139,4 +131,38 @@ nav ul ul li:hover {
 
 ._list:hover::after {
   transform: scaleX(1);
+}
+.contact-btn a svg path {
+  cursor: pointer;
+}
+.contact-btn {
+  cursor: pointer;
+}
+.contact-btn a:hover > svg path {
+  cursor: pointer;
+  fill: var(--main);
+  transition: var(--tran-03);
+  scale: 0.95;
+}
+
+.swiper-container {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100vh !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  margin: 10px 0 !important;
+  cursor: pointer !important;
+}
+
+.swiper-button-next {
+  /* Стиль для кнопки "вперед" */
+}
+
+.swiper-button-prev {
+  /* Стиль для кнопки "назад" */
 }
