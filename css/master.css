@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"); */
 @import url("menu.css");
 @import url("main.css");
 @import url("footer.css");
@@ -9,7 +9,7 @@
   --title: 65px;
   --btn: 16px;
   --h1: 40px;
-  --h2: 20px;
+  --h2: 18px;
   --h3: 16px;
   --h3-card: 14px;
   --black: #2e2e2e;
@@ -87,6 +87,7 @@ h2 {
   font-weight: 500;
   font-size: var(--h2);
   color: #454545;
+  line-height: 1.5;
 }
 h3 {
   font-family: "Montserrat";

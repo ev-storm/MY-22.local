@@ -2,11 +2,11 @@
 	<div class="menu">
 		<img src="/assets/svg/logo.svg" alt="">
 		<div class="nav-con">
-			<nav>
+			<nav  class="menu">
 				<ul>
 						<li class="_list"><a href="#">Главна</a></li>
 						<li class="vert-list"><span>|</span></li>
-						<li class="-list">Услуги
+						<li class="-list _list">Услуги
 								<ul>
 										<li class="_list"><a href="#">Изготовление металлоконструкций</li></a>
 										<li class="_list"><a href="#">Монтаж металлоконструкций</a></li>
@@ -19,7 +19,7 @@
 							<li class="vert-list"><span>|</span></li>
 						<li class="_list"><a href="#"> Монтажные работы</a></li>
 							<li class="vert-list"><span>|</span></li>
-						<li class="-list">О компании
+						<li class="-list _list">О компании
 							<ul>
 										<li class="_list"><a href="#">История компании</a></li>
 										<li class="_list"><a href="#">Контакты</a></li>

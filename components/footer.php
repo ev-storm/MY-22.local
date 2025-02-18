@@ -1,20 +1,64 @@
 <div class="footer-con">
-	<div class="footer">
+
 		<div class="footer-logo">
-			<img class="pattern-footer" src="/assets/svg/pattern-call-back.svg" alt="">
-			<img src="/assets/svg/logo-white.svg" alt="">
+			<img src="/assets/svg/logo-footer.svg" alt="logo">
+			<h2>ООО «Монтажное управление № 22»</h2>
+			<h3>Все права защищены ©</h3>
 		</div>
+
 		<nav class="menu-footer">
-			<ul>
-				<a href="#"><li><b>Меню</b></li></a>
-				<a href="https://sankom.shop/catalog"><li class="_list">Каталог</li></a>
-				<a href="https://sankom.shop/company"><li class="_list">О компании</li></a>
-				<a href="https://sankom.shop/company"><li class="_list">Оплата и доставка</li></a>
-				<a href="https://sankom.shop/company"><li class="_list">Блог</li></a>
-				<a href="https://sankom.shop/company"><li class="_list">Монтажные работы</li></a>
-				<a href="https://sankom.shop/company"><li class="_list">Контакты</li></a>
-			</ul>
-		</nav>
+  <ul class="menu-footer_main">
+    <li class="_list item ">
+      <a href="#">Главная</a>
+    </li>
+    <div class="_marg"></div>
+    <li class="_list item">
+      <a href="#">Услуги</a>
+      <ul class="podmenu podmenu-1">
+        <li class="_list item">
+          <a href="#">Изготовление<br> металлоконструкций</a>
+        </li>
+        <div class="_marg"></div>
+        <li class="_list item">
+          <a href="#">Монтаж <br>металлоконструкций</a>
+        </li>
+        <div class="_marg"></div>
+        <li class="_list item">
+          <a href="#">Монтаж <br>профлиста</a>
+        </li>
+        <div class="_marg"></div>
+        <li class="_list item">
+          <a href="#">Монтаж <br>сэндвич-панелей</a>
+        </li>
+      </ul>
+    </li>
+    <div class="_marg"></div>
+    <li class="_list item">
+      <a href="#">Наши работы</a>
+    </li>
+    <div class="_marg"></div>
+    <li class="_list item">
+      <a href="#">О компании</a>
+      <ul class="podmenu podmenu-2">
+        <li class="_list item">
+          <a href="#">История компании</a>
+        </li>
+        <div class="_marg"></div>
+        <li class="_list item">
+          <a href="#">Контакты</a>
+        </li>
+        <div class="_marg"></div>
+        <li class="_list item">
+          <a href="#">Реквизиты</a>
+        </li>
+        <div class="_marg"></div>
+        <li class="_list item">
+          <a href="#">Политика конфиденциальности</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 		<div class="contact">
 			<h2><b>Контакты</b></h2>
@@ -26,21 +70,9 @@
 			вл. 4, БП «Румянцево», блок Г, офис 636﻿</h2>
 		</div>
 
-		<div class="podp">
-			<h2>Подпишись на оповещения:</h2>
-			<form class="footer-form" action="#">
-				<input type="email" name="Подписка на оповещения" placeholder="Email" required>
-				<button type="submit" class="btn btn-mail"><img src="/assets/svg/link/plane.svg" alt=""></button>
-			</form>
-			<div class="contact-btn-footer">
-				<a href="#"><img src="/assets/svg/link/wt-a.svg" alt="WhatsApp"></a>
-				<a href="#"><img src="/assets/svg/link/tg-a.svg" alt="Telegram"></a>
-				<a href="#"><img src="/assets/svg/link/yu-a.svg" alt="YouTube"></a>
-				<a href="#"><img src="/assets/svg/link/vk-a.svg" alt="VK"></a>
-				<a href="#"><img src="/assets/svg/link/dz-a.svg" alt="dzen"></a>
-			</div>
+		<div class="up">
+			
 		</div>
 
 
-	</div>
 </div>

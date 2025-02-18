@@ -33,29 +33,29 @@
   gap: 15px;
 }
 
-nav {
+.menu {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 16px;
   color: var(--black);
 }
 
-nav ul {
+.menu ul {
   list-style-type: none;
   cursor: pointer;
 }
-nav ul li a {
+.menu ul li a {
   cursor: pointer;
 }
 
-nav > ul > li {
+.menu > ul > li {
   position: relative;
   display: inline-block;
   cursor: pointer;
   padding: 10px 20px;
 }
 
-nav ul ul {
+.menu ul ul {
   position: absolute;
   left: 0;
   top: 58px;
@@ -69,24 +69,23 @@ nav ul ul {
   transition: all 0.6s ease-in-out;
 }
 
-nav > ul > li:hover > ul {
+.menu > ul > li:hover > ul {
   max-height: 500px;
 }
 
-nav ul ul li {
+.menu ul ul li {
   display: block;
   padding: 15px 0;
   margin: 0 20px;
   background-color: #fff;
   border-style: solid;
-
   border-width: 0px;
   border-bottom-width: 1px;
   cursor: pointer;
   border-color: #00000020;
   transition: var(--tran-03);
 }
-nav ul ul li:hover {
+.menu ul ul li:hover {
   color: var(--main);
   transition: var(--tran-03);
 }
@@ -116,7 +115,7 @@ nav ul ul li:hover {
   list-style: none;
 }
 
-._list::after {
+._list::before {
   content: "";
   position: absolute;
   left: 0;
@@ -129,7 +128,7 @@ nav ul ul li:hover {
   z-index: 999;
 }
 
-._list:hover::after {
+._list:hover::before {
   transform: scaleX(1);
 }
 .contact-btn a svg path {
