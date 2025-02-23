@@ -13,3 +13,16 @@ var uslugiSwiper = new Swiper(".uslugi-swiper", {
     clickable: true,
   },
 });
+
+var swiperBrend = new Swiper(".swiper-brend", {
+  slidesPerView: 5,
+  loop: true,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2000,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

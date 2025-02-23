@@ -4,6 +4,8 @@
 @import url("footer.css");
 @import url("modal.css");
 @import url("media.css");
+@import url("contact.css");
+@import url("uslugi.css");
 
 :root {
   --title: 65px;
@@ -42,6 +44,7 @@ html {
 a {
   text-decoration: none;
   color: var(--black);
+  cursor: pointer;
 }
 body {
   display: flex;
@@ -51,7 +54,7 @@ body {
 .btn {
   border-style: none;
   width: fit-content;
-  padding: 4px 35px;
+  padding: 4px 60px;
   margin: 0 15px;
   font-size: var(--btn);
   border-radius: 3px;
@@ -63,8 +66,9 @@ body {
   transition: var(--tran-05);
 }
 .btn:hover {
-  background: #ff7e2e;
+  background: #e9803f;
   transition: var(--tran-05);
+  color: #fff;
 }
 .btn:active {
   scale: 0.9;
@@ -98,4 +102,28 @@ span {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 13px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+    isibility: visible;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+    visibility: hidden;
+  }
 }

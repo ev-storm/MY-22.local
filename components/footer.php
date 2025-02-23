@@ -2,8 +2,10 @@
 
 		<div class="footer-logo">
 			<img src="/assets/svg/logo-footer.svg" alt="logo">
-			<h2>ООО «Монтажное управление № 22»</h2>
-			<h3>Все права защищены ©</h3>
+			<div>
+				<h2>ООО «Монтажное управление № 22»</h2>
+				<h3>Все права защищены ©</h3>
+			</div>
 		</div>
 
 		<nav class="menu-footer">
@@ -61,17 +63,29 @@
 </nav>
 
 		<div class="contact">
-			<h2><b>Контакты</b></h2>
+			<h2>Контакты</h2>
 			<div class="contact-or-con">
-					<h1 class="contact-or">+7 (495) 021-28-22</h1>
-					<h2 class="contact-or">zakaz@sankom.pro</h2>
+					<h1 class="contact-or">+7 (495) 556-6025</h1>
+					<h2 class="contact-or">info@mu-22.ru</h2>
 			</div>
-			<h2>г. Москва, Киевское шос., 22-й километр, <br>
-			вл. 4, БП «Румянцево», блок Г, офис 636﻿</h2>
+			<h3>Московская область, г. Жуковский,<br> ул. Кооперативная, д.14<br>
+				<span>Режим работы офиса: пн-пт 8:00 -17:00</span>
+			</h3>
+			<div class="contact-btn">
+				<button class="btn btn-modal-call">Связаться</button>
+				<div>
+					<a href="#"><img src="/assets/svg/link/wt-wh.svg" alt=""></a>
+					<a href="#"><img src="/assets/svg/link/tg-wh.svg" alt=""></a>
+					<a href="#"><img src="/assets/svg/link/ml-wh.svg" alt=""></a>
+					<a href="#"><img src="/assets/svg/link/vk-wh.svg" alt=""></a>
+					<a href="#"><img src="/assets/svg/link/tel-wh.svg" alt=""></a>
+				</div>
+			</div>
 		</div>
+		<img  class="contact-back" src="/assets/svg/logo-3.svg" alt="">
 
 		<div class="up">
-			
+			<a href="#"><img class="contact-up" src="/assets/svg/up.svg" alt=""></a>
 		</div>
 
 

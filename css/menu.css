@@ -21,6 +21,7 @@
 .nav-con {
   display: flex;
   align-items: center;
+  background: #fff;
 }
 
 .contact-con {
@@ -86,7 +87,6 @@
   transition: var(--tran-03);
 }
 .menu ul ul li:hover {
-  color: var(--main);
   transition: var(--tran-03);
 }
 
@@ -94,14 +94,16 @@
   position: relative;
 }
 .vert-list {
-  padding: 0;
+  padding: 0 !important;
   color: #8b8b8b;
+  margin: 0;
 }
 
 .-list::after {
   content: url(/assets/svg/link/down.svg);
   transition: var(--tran-03);
   display: inline-block;
+  margin-left: 3px;
 }
 
 .-list:hover:after {
@@ -164,4 +166,53 @@
 
 .swiper-button-prev {
   /* Стиль для кнопки "назад" */
+}
+.tel-item-con {
+  position: relative;
+
+  cursor: pointer;
+}
+.tel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tel-item-con svg:hover path {
+  cursor: pointer;
+  fill: var(--main);
+  transition: var(--tran-03);
+  scale: 0.95;
+}
+.tel-item-con svg {
+  cursor: pointer;
+}
+.tel-item {
+  position: absolute;
+  top: 52px;
+  left: -170px;
+  width: 200px;
+  height: 50px;
+  box-shadow: #00000020 0 0 15px;
+  border-radius: 2px;
+  background: #fff;
+  transform: translateY(-110%);
+  opacity: 0;
+  transition: var(--tran-03);
+  z-index: -1;
+}
+.tel-item-con svg:hover ~ .tel-item {
+  transform: translateY(0);
+  opacity: 1;
+  transition: var(--tran-03);
+}
+.tel-item h2 {
+  font-size: 20px;
+}
+
+.copy-message {
+  position: absolute;
+  margin-left: 10px;
+  color: var(--main);
+  font-size: 14px;
+  display: none;
 }
