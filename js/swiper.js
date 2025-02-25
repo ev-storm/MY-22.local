@@ -26,3 +26,19 @@ var swiperBrend = new Swiper(".swiper-brend", {
     clickable: true,
   },
 });
+
+// var cartsSwiper = new Swiper(".carts-swiper", {
+//   slidesPerView: 1,
+//   loop: true,
+//   autoplay: {
+//     delay: 2000,
+//   },
+//   scrollbar: {
+//     el: ".swiper-scrollbar",
+//     hide: true,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });

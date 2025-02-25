@@ -128,3 +128,118 @@ telBtn.addEventListener("click", () => {
       console.error("Не удалось скопировать текст: ", err);
     });
 });
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+const container = document.getElementById("carts-container"); // Контейнер для карточек
+const containerCarts = document.querySelector(".carts-swiper"); // Контейнер для слайдера
+const cartsFullCon = document.querySelector(".carts-full-con"); // Модальное окно
+const cartsFull = document.querySelector(".carts-full");
+
+function toggleCartsFull(action) {
+  if (action === "show") {
+    cartsFullCon.classList.remove("hide");
+    cartsFullCon.classList.remove("hide-prev");
+    cartsFullCon.classList.add("show");
+  } else if (action === "hide") {
+    cartsFullCon.classList.remove("show");
+    cartsFullCon.classList.add("hide");
+  }
+}
+
+function generateCards(data) {
+  data.forEach((item, index) => {
+    const card = document.createElement("div");
+    card.className = "carts";
+    card.style.backgroundImage = `url(/assets/img/carts/${index + 1}/1.png)`;
+    card.innerHTML = `
+      <div class="carts-content">
+        <h1>${item.title}</h1>
+        <h2>${item.description}</h2>
+        <h2><span>Адрес:</span><br>${item.address}</h2>
+        <div class="carts-prop">
+          <h3>Год проведения работ <br><span>${item.year}</span></h3>
+          <h3>Масса м/к <br><span>${item.weight}</span></h3>
+        </div>
+      </div>
+      <div class="carts-back"></div>
+    `;
+    container.appendChild(card);
+  });
+
+  setupEventListeners(); // Устанавливаем обработчики после генерации карточек
+}
+
+function setupEventListeners() {
+  document.querySelectorAll(".carts").forEach((cart, index) => {
+    // Добавление обработчиков клика на карточки
+    cart.addEventListener("click", () => {
+      toggleCartsFull("show");
+      updateSwiper(index + 1); // Обновляем слайдер при открытии
+    });
+  });
+
+  // Закрытие модального окна при клике вне карточек
+  cartsFullCon.addEventListener("click", (event) => {
+    if (!event.target.closest(".carts-full")) toggleCartsFull("hide");
+  });
+}
+
+function updateSwiper(cartIndex) {
+  // Удаляем старый слайдер
+  const existingSwiperWrapper = document.querySelector(".swiper-wrapper");
+  if (existingSwiperWrapper) {
+    existingSwiperWrapper.remove();
+  }
+
+  // Создаём новый слайдер
+  const cartsFullConHTML = `
+    <div class="swiper-wrapper">
+      <div class="swiper-slide carts-slide">
+        <img class="carts-slide-back" src="/assets/img/carts/${cartIndex}/1.png" alt="">
+      </div>
+      <div class="swiper-slide carts-slide">
+        <img class="carts-slide-back" src="/assets/img/carts/${cartIndex}/2.png" alt="">
+      </div>
+      <div class="swiper-slide carts-slide">
+        <img class="carts-slide-back" src="/assets/img/carts/${cartIndex}/3.png" alt="">
+      </div>
+      <div class="swiper-slide carts-slide">
+        <img class="carts-slide-back" src="/assets/img/carts/${cartIndex}/4.png" alt="">
+      </div>
+      <div class="swiper-slide carts-slide">
+        <img class="carts-slide-back" src="/assets/img/carts/${cartIndex}/5.png" alt="">
+      </div>
+    </div>
+  `;
+
+  // Вставляем новый слайдер в контейнер
+  containerCarts.insertAdjacentHTML("beforeend", cartsFullConHTML);
+
+  var cartsSwiper = new Swiper(".carts-swiper", {
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      hide: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+}
+
+// Получение данных из JSON и запуск генерации карточек
+fetch("../js/obj.json")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Статус: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then((data) => generateCards(data))
+  .catch((error) => console.error("Ошибка загрузки JSON:", error));

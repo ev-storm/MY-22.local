@@ -48,6 +48,9 @@
 .menu ul li a {
   cursor: pointer;
 }
+.logo {
+  cursor: pointer;
+}
 
 .menu > ul > li {
   position: relative;

@@ -1,4 +1,4 @@
-	<title>О компании</title>
+	<title>Услуги</title>
 	<?php include "../components/head.php"?>
 
 <body>
@@ -12,7 +12,7 @@
 			 </div>
 		</div>
 
-		<div class="block_2-cont">
+		<div class="block_2">
 
 				<h1 class="name">
 					<div></div>

@@ -65,7 +65,7 @@
 		<div class="contact">
 			<h2>Контакты</h2>
 			<div class="contact-or-con">
-					<h1 class="contact-or">+7 (495) 556-6025</h1>
+					<h1 class="contact-or">+7 (495) 556-60-25</h1>
 					<h2 class="contact-or">info@mu-22.ru</h2>
 			</div>
 			<h3>Московская область, г. Жуковский,<br> ул. Кооперативная, д.14<br>

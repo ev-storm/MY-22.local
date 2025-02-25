@@ -1,6 +1,6 @@
 <div class="menu-con">
 	<div class="menu">
-		<img src="/assets/svg/logo.svg" alt="">
+		<a href="/"><img  class="logo" src="/assets/svg/logo.svg" alt=""></a>
 		<div class="nav-con">
 			<nav  class="menu">
 				<ul>
@@ -15,7 +15,7 @@
 								</ul>
 						</li>
 							<li class="vert-list"><span>|</span></li>
-						<li class="_list"><a href="#">Наши работы</a></li>
+						<li class="_list"><a href="/pages/object.php">Наши работы</a></li>
 							<li class="vert-list"><span>|</span></li>
 						<li class="-list _list"><a href="/pages/contacts.php">О компании</a>
 							<ul>
